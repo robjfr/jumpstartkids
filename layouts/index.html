@@ -1,0 +1,40 @@
+{{ define "main" }}
+<div class="banner">
+    <img src="{{ .Site.Params.banner }}" alt="{{ .Site.Title }} Banner">
+</div>
+
+<section class="hero">
+    <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} Logo" class="logo">
+    <h1>{{ .Site.Title }}</h1>
+    <p>{{ .Site.Params.description }}</p>
+    <div class="services">
+        <p><strong>We cover:</strong></p>
+        <ul>
+            <li>Reading ✅</li>
+            <li>Writing ✅</li>
+            <li>Speaking ✅</li>
+            <li>Listening ✅</li>
+        </ul>
+        <p class="age-range"><strong>For ages 3 - 13</strong></p>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Our Environment</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="/images/kids1.jpg" alt="Learning environment">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/kids2.jpg" alt="Students learning">
+        </div>
+        <div class="gallery-item">
+            <img src="/images/chris.jpg" alt="Teaching session">
+        </div>
+    </div>
+</section>
+
+<div class="content">
+    {{ .Content }}
+</div>
+{{ end }}

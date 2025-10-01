@@ -1,0 +1,30 @@
+baseURL: 'https://jumpstartkidseducation.com'
+languageCode: en-us
+title: 'Jump Start Kids Education'
+
+params:
+  description: "Jump Start Kids provide children with a stress-free and comfortable environment to equip them with the necessary skills for success in school."
+  logo: /images/logo.jpg
+  banner: /images/banner.jpg
+  address: "11 Lorong Duku, 11 Taman Duku Juru"
+  phone: "011-5558 1887"
+  email: "jumpstartkidseducation@gmail.com"
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 10
+    - name: About
+      url: /about/
+      weight: 20
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home: [HTML, RSS]
+  page: [HTML]
+  section: [HTML, RSS]
