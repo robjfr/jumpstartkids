@@ -8,6 +8,16 @@
     <h1>{{ .Site.Title }}</h1>
     <p>{{ .Site.Params.description }}</p>
     <div class="services">
+        {{ if eq .Site.Language.Lang "zh" }}
+        <p><strong>我们的课程包括：</strong></p>
+        <ul>
+            <li>阅读 ✅</li>
+            <li>写作 ✅</li>
+            <li>口语 ✅</li>
+            <li>听力 ✅</li>
+        </ul>
+        <p class="age-range"><strong>适合年龄：3-13岁</strong></p>
+        {{ else }}
         <p><strong>We cover:</strong></p>
         <ul>
             <li>Reading ✅</li>
@@ -16,11 +26,12 @@
             <li>Listening ✅</li>
         </ul>
         <p class="age-range"><strong>For ages 3 - 13</strong></p>
+        {{ end }}
     </div>
 </section>
 
 <section class="gallery">
-    <h2>Our Environment</h2>
+    <h2>{{ if eq .Site.Language.Lang "zh" }}我们的环境{{ else }}Our Environment{{ end }}</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
             <img src="/images/kids1.jpg" alt="Learning environment">

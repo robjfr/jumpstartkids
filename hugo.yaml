@@ -1,6 +1,53 @@
 baseURL: 'https://jumpstartkidseducation.com'
+defaultContentLanguage: en
 languageCode: en-us
-title: 'Jump Start Kids Education'
+
+languages:
+  en:
+    languageName: English
+    title: 'Jump Start Kids Education'
+    weight: 1
+    params:
+      description: "Jump Start Kids provide children with a stress-free and comfortable environment to equip them with the necessary skills for success in school."
+      logo: /images/logo.jpg
+      banner: /images/banner.jpg
+      address: "11 Lorong Duku, 11 Taman Duku Juru"
+      phone: "011-5558 1887"
+      email: "jumpstartkidseducation@gmail.com"
+    menu:
+      main:
+        - name: Home
+          url: /
+          weight: 10
+        - name: Reading Eggs
+          url: /reading-eggs/
+          weight: 20
+        - name: About
+          url: /about/
+          weight: 30
+
+  zh:
+    languageName: 中文
+    title: 'Jump Start Kids 教育中心'
+    weight: 2
+    params:
+      description: "Jump Start Kids 为孩子们提供一个无压力和舒适的环境，让他们具备在学校取得成功所需的技能。"
+      logo: /images/logo.jpg
+      banner: /images/banner.jpg
+      address: "11 Lorong Duku, 11 Taman Duku Juru"
+      phone: "011-5558 1887"
+      email: "jumpstartkidseducation@gmail.com"
+    menu:
+      main:
+        - name: 主页
+          url: /zh/
+          weight: 10
+        - name: Reading Eggs
+          url: /zh/reading-eggs/
+          weight: 20
+        - name: 关于我们
+          url: /zh/about/
+          weight: 30
 
 params:
   description: "Jump Start Kids provide children with a stress-free and comfortable environment to equip them with the necessary skills for success in school."
@@ -9,15 +56,6 @@ params:
   address: "11 Lorong Duku, 11 Taman Duku Juru"
   phone: "011-5558 1887"
   email: "jumpstartkidseducation@gmail.com"
-
-menu:
-  main:
-    - name: Home
-      url: /
-      weight: 10
-    - name: About
-      url: /about/
-      weight: 20
 
 markup:
   goldmark:
