@@ -45,6 +45,90 @@
     </div>
 </section>
 
+<section class="skills-section">
+    {{ if eq .Site.Language.Lang "zh" }}
+    <h2>我们的教学方法</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>📖 阅读</h3>
+            <p>阅读有助于提高英语的各个方面——词汇、拼写、语法和写作。它培养学习者对语言正确形式的直觉。阅读技能帮助学生掌握内容并得出结论。</p>
+        </div>
+        <div class="skill-card">
+            <h3>✍️ 写作</h3>
+            <p>写作为学习者提供成就的实际证据。它有助于巩固对词汇和结构的掌握，以及如何理解文本和撰写作文。它能培养学习者总结和自由运用语言的能力。</p>
+        </div>
+        <div class="skill-card">
+            <h3>🗣️ 口语</h3>
+            <p>我们与他人交流以表达我们的想法并了解他人的想法。游戏和配对活动中的语言表现是学习和说语言的鼓励来源。</p>
+        </div>
+        <div class="skill-card">
+            <h3>👂 听力</h3>
+            <p>通过专注于让学生听该特定语言的声音，可以增强听力技能。这将帮助他们正确发音。聆听不同背景和地区的人的讲话将帮助他们理解不同的口音和单词的准确发音。</p>
+        </div>
+    </div>
+    {{ else }}
+    <h2>Our Teaching Approach</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>📖 Reading</h3>
+            <p>Reading helps improve all parts of the English language – vocabulary, spelling, grammar, and writing. It develops the learner's intuition for the correct forms of the language. Reading skills help students grasp content and draw conclusions.</p>
+        </div>
+        <div class="skill-card">
+            <h3>✍️ Writing</h3>
+            <p>Writing provides a learner with physical evidence of achievement. It helps to consolidate a grasp of vocabulary and structure, how to understand text and write compositions. It fosters the learner's ability to summarize and use the language freely.</p>
+        </div>
+        <div class="skill-card">
+            <h3>🗣️ Speaking</h3>
+            <p>We communicate with others to express our ideas and know others' ideas as well. Language activities in games and pair work are an encouraging source to learn and speak the language.</p>
+        </div>
+        <div class="skill-card">
+            <h3>👂 Listening</h3>
+            <p>Listening skills can be enhanced by focusing on making students listen to the sounds of the particular language. This helps them with the right pronunciation of words. Listening to speech from different backgrounds and regions helps them understand different accents.</p>
+        </div>
+    </div>
+    {{ end }}
+</section>
+
+<section class="why-choose-us">
+    {{ if eq .Site.Language.Lang "zh" }}
+    <h2>为什么选择 Jump Start Kids？</h2>
+    <div class="why-content">
+        <div class="why-text">
+            <h3>让学习变得简单有趣</h3>
+            <p>学习阅读可以既简单又有趣。Jump Start Kids 使用 Reading Eggs、Reading Eggspress 和 Fast Phonics 教孩子们在学校取得成功所需的核心阅读和识字技能。</p>
+            <p>由经验丰富的教育工作者团队开发，高度互动的课程基于可靠的科学研究。引人入胜的一对一学习活动包含丰富多彩的动画、有趣的音乐和令人兴奋的奖励，让孩子们保持学习动力。</p>
+            <ul>
+                <li>✨ 一对一课程让您的孩子按照自己的节奏学习</li>
+                <li>✨ 专注于基本的自然拼读技能和高频常见词来发展词汇</li>
+                <li>✨ 分级测试确保课程符合您孩子的能力</li>
+                <li>✨ 超过2000本电子书和220个核心理解课程</li>
+            </ul>
+        </div>
+        <div class="why-image">
+            <img src="/images/reading-eggs-logo.png" alt="Reading Eggs Logo">
+        </div>
+    </div>
+    {{ else }}
+    <h2>Why Choose Jump Start Kids?</h2>
+    <div class="why-content">
+        <div class="why-text">
+            <h3>Making Learning Easy and Fun</h3>
+            <p>Learning to read can be easy and fun. Jump Start Kids uses Reading Eggs, Reading Eggspress, and Fast Phonics to teach children the core reading and literacy skills they need for success at school.</p>
+            <p>Developed by a team of experienced educators, our highly interactive lessons are based on solid scientific research. The engaging one-on-one learning activities contain colorful animation, fun music, and exciting rewards that keep kids motivated to learn.</p>
+            <ul>
+                <li>✨ One-on-one lessons allow your child to learn at their own pace</li>
+                <li>✨ Develops vocabulary with a focus on essential phonics skills and high frequency sight words</li>
+                <li>✨ A placement test ensures lessons match your child's ability</li>
+                <li>✨ Over 2000 e-books with quizzes and 220 core comprehension lessons</li>
+            </ul>
+        </div>
+        <div class="why-image">
+            <img src="/images/reading-eggs-logo.png" alt="Reading Eggs Logo">
+        </div>
+    </div>
+    {{ end }}
+</section>
+
 <div class="content">
     {{ .Content }}
 </div>
